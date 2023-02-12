@@ -71,6 +71,8 @@ form{
     font-weight: bold;
     background-image: linear-gradient(to left, darksalmon , bisque );
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display:grid;
+    transform: translate(200px, 20px)
     }
   
     .grid{
@@ -82,7 +84,7 @@ form{
         height: 100px;
         font-weight: bold;
         justify-content: space-between;
-        transform: translate(550px, 20px)
+        transform: translate(200px, 20px);
        }
 
     .hijo{
@@ -95,10 +97,10 @@ form{
     }
     .lista{
         color: cadetblue;
-        text-align: center;
         font-weight: bold;
         font-family: Georgia, 'Times New Roman', Times, serif;
         list-style-type: none;
+        text-align: center;
      }
     .trabajos{
         color: cadetblue;
@@ -168,7 +170,54 @@ justify-content:space-around
     width: 100%;
 }
 
-    @media screen and (min-width: 425px) {
+    @media screen and (min-width: 1024px ){
+        
+        .grid{
+            display:grid;
+            transform: translate(730px, 20px)
+            }
+            .tip{
+                display:grid;
+                transform: translate(200px, 20px)
+                }
+                .lista{
+                    display:grid;
+                    transform: translate(180px, 20px)
+                    }
+                    .tra{
+                        flex-direction: column;
+                        
+                        } 
+    }   
+
+
+    @media screen and (max-width: 768px){
+        .Header__list {
+            display:flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            height: auto;
+            }     
+            .esq{
+                width: 300px;
+                height: 200px;
+                }
+        .images{
+             flex-direction: column;
+             display: flex;
+
+    }
+        .grid{
+        display:grid;
+        transform: translate(300px, 20px)
+        }
+
+        .tra{
+            flex-direction: column;
+
+            }  }
+
+    @media screen and (max-width: 426px) {
         .header { flex-direction: column; 
             overflow: hidden; }
 
@@ -203,6 +252,7 @@ justify-content:space-around
     }
     .tra{
     flex-direction: column;
-    }       }
+    }       } 
 
-   
+
+    
